@@ -14,7 +14,7 @@ namespace EightToTen.Controllers
             _restaurantService = restaurantService;
         }
 
-        [HttpGet("Pick/Pizza, Burgers, Mexican/{category}")]
+        [HttpGet("Pick/Pizza,Burger,Mexican/{category}")]
         public string PickRestaurant(string category)
         {
             return _restaurantService.PickRestaurant(category);
